@@ -7,21 +7,30 @@
 /* другорядний колір фона #2F303A; #F5F4FA */
 /* logo ??? */
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
+    --primary-text-color:#757575;
+    --title-text-color:#212121;
     --accent-color:#2196F3;
-    --white: #FFFFFF;
-    --white-mod: rgba(255, 255, 255, 0.6);
+    --primary-white-color:#FFFFFF;
+    --white-mod:rgba(255, 255, 255, 0.6);
+    --primary-bg-color:#F5F4FA;
 }
 .page {
-    background-color: #FFFFFF;
-    color: var(--primary-text-color);
+    background-color:var(--primary-white-color);
+    color:var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.71;
 }
 .list {
-list-style: none;
+    list-style: none;
 }
 .logo {
     color:var(--accent-color);
+    font-family: Raleway, sans-serif;
+        font-size: 26px;
+        line-height: 1.19;
+    text-decoration: none;
 }
 .logo:hover {
     color:var(--title-text-color)
@@ -29,47 +38,121 @@ list-style: none;
 /* site-nav */
 .site-nav .link {
     color:var(--title-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color:var(--accent-color)
+    color:var(--accent-color);
+}
+.site-nav .link.current {
+    color:var(--accent-color);
 }
 .contact-info .link{
-    color:var(--primary-text-color)
+    color:var(--primary-text-color);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+     text-decoration: none;
 }
 .contact-info .link:hover,
 .contact-info .link:focus {
-    color:var(--accent-color)
+    color:var(--accent-color);
 
 }
-/* hero ???*/
+/* hero */
 .hero-title {
-    color:#A1B2C3
+    color:var(--primary-white-color);
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+}
+.hero {
+    background-color: #2F303A;
 }
 /* section */
 .section-title {
-    color:var(--title-text-color)
+    color:var(--title-text-color);
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
 }
 /* features */
 .feature-list .title {
-    color:var(--title-text-color)
+    color:var(--title-text-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
 }
 /* team */
-.team-title .team {
-    color:var(--title-text-color)
+.team-list .team {
+    color:var(--title-text-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    background-color:var(--primary-white-color);
+}
+.team-list .profession {
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+    background-color: var(--primary-white-color);
+}
+.section.team {
+        background-color: #F5F4FA;
 }
 /* footer */
 .site-footer .map-link {
-    color: var(--white);
+    color:var(--primary-white-color);
 }
 .site-footer .map-link:hover,
 .site-footer .map-link:focus {
-    color: var(--accent-color)
+    color:var(--accent-color);
 }
 .site-footer .link {
-    color:var(--white-mod)
+    color:var(--white-mod);
 }
 .site-footer .link:hover,
 .site-footer .link:focus {
-    color: var(--accent-color)
+    color:var(--accent-color);
+}
+.down {
+    background-color: #2F303A;
+}
+/* button */
+button {
+    font-family: inherit;
+    text-decoration: none;
+}
+.button {
+    color:var(--title-text-color);
+    background-color:var(--primary-bg-color);
+    border-color:var(--primary-bg-color);
+
+}
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+}
+/* portfolio */
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
 }
