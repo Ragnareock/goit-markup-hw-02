@@ -32,9 +32,13 @@
         line-height: 1.19;
     text-decoration: none;
 }
-.logo:hover {
-    color:var(--title-text-color)
+.accent {
+    color:#000000;
 }
+.down .accent{
+    color:var(--primary-white-color)
+}
+
 /* site-nav */
 .site-nav .link {
     color:var(--title-text-color);
@@ -62,7 +66,6 @@
 .contact-info .link:hover,
 .contact-info .link:focus {
     color:var(--accent-color);
-
 }
 /* hero */
 .hero-title {
@@ -150,9 +153,24 @@ button {
         letter-spacing: 0.06em;
 }
 /* portfolio */
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(-primary-bg-color);
+}
 .button.secondary:hover,
 .button.secondary:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-color: var(--accent-color);
+}
+.section-portfolio {
+    color: var(--title-text-color);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;    
+        letter-spacing: 0.06em;
+}
+.list .product {
+        font-size: 16px;
+        line-height: 1.9;
 }
