@@ -75,6 +75,7 @@ body {
         line-height: 1.36;
         text-align: center;
         letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 .hero {
     background-color: var(--secondary-bg-color);
@@ -115,6 +116,8 @@ body {
 /* footer */
 .site-footer .map-link {
     color:var(--primary-white-color);
+    text-decoration: none;
+    font-style: normal;
 }
 .site-footer .map-link:hover,
 .site-footer .map-link:focus {
@@ -122,6 +125,8 @@ body {
 }
 .site-footer .link {
     color:var(--white-mod);
+    text-decoration: none;
+    font-style: normal;
 }
 .site-footer .link:hover,
 .site-footer .link:focus {
